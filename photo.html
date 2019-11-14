@@ -7,15 +7,15 @@
 </head>
 
 <body>
-
   <header class="page-header">
     <div class="logo-wrapper">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип приложения «Пинк» с белыми буквами на темно-синем фоне">
-    </a>
-  </div>
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          alt="Логотип приложения «Пинк» с белыми буквами на темно-синем фоне">
+      </a>
+      <button class="toggle">Открыть меню</button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list header-list">
           <li class="header-list__item">
@@ -38,16 +38,152 @@
   <main class="page-main photo">
     <h1 class="photo__heading">Фотографии пользователей</h1>
     <div class="photo__text-wrapper">
-    <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
     </div>
-    <section class="photo__gallery gallery">
+    <section class="gallery">
+      <h2 class="visually-hidden">Галерея картинок</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотография навесного моста с красивым пейзажем,зелеными деревьями и речкой внизу.">
-
+          <div class="photo">
+            <img class="photo__img photo__img--full-width" src="https://via.placeholder.com/150x150" width="150"
+              height="150" alt="Фотография навесного моста с красивым пейзажем,зелеными деревьями и речкой внизу.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Анна<span class="photo__time">(5 минут назад)</span>
+              </p>
+              <p class="photo__text">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
+                свои вопросы!
+              </p>
+              <button class="photo__like">Нравиться:215</button>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="photo">
+            <img class="photo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Фотография белого автомобиля на фоне темно-синей стены,с фотоаппаратом на переднем плане.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Левон<span class="photo__time">(5 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <button class="photo__like">Нравиться:356</button>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="photo">
+            <img class="photo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Фотография барабанной установки.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Антон<span class="photo__time">(12 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Соседи будут рады!
+              </p>
+              <button class="photo__like">Нравиться:666</button>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="photo">
+            <img class="photo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Фотография стеклянной крыши с синим небом и облаками над ней.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Борис<span class="photo__time">(20 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <button class="photo__like">Нравиться:215</button>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="photo">
+            <img class="photo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Фотография Кубанской ярморки с оранжевым навесом.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Сергей<span class="photo__time">(25 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Самая кубанкая в мире!
+              </p>
+              <button class="photo__like">Нравиться:4</button>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="photo">
+            <img class="photo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Фотография холма горы с растениями и ногами фоторгафа сидящего на камнях.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Максим<span class="photo__time">(40 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Где снег-то?
+              </p>
+              <button class="photo__like">Нравиться:150</button>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="photo">
+            <img class="photo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Фотография крыла самолоте на фоне горизонта и солнца.">
+            <div class="photo__wrapper">
+              <p class="photo__name">
+                Надежда<span class="photo__time">(45 часов назад)</span>
+              </p>
+              <p class="photo__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <button class="photo__like">Нравиться:2560</button>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
   </main>
 
+  <footer class="page-footer">
+    <div class="logo-footer">
+      <a class="logo-footer__link">
+        <img class="logo-footer__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          alt="Логотип приложения «Пинк» с черными буквами и розовыми очками">
+      </a>
+    </div>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><span
+              class="visually-hidden">Твиттер</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+              class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--play" href="#"><span class="visually-hidden">Плей</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          alt="Логотип «HTML Academy» розового цвета">
+      </a>
+    </div>
+  </footer>
 </body>
+
+</html>
