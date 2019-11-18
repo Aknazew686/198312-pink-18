@@ -64,11 +64,11 @@
         <p class="dowload__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
-    <section class="question">
-      <h2 class="visually-hidden">Вопрос</h2>
-      <p class="question__text">Устали от серости мегаполиса?</p>
-      <p class="question__text">Нам есть, что вам предложить!</p>
-    </section>
+    <div class="sentence">
+      <h2 class="visually-hidden">Предложение</h2>
+      <p class="sentence__text">Устали от серости мегаполиса?</p>
+      <p class="sentence__text">Нам есть, что вам предложить!</p>
+    </div>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
@@ -98,7 +98,84 @@
       <img class="advantages__image" src="https://via.placeholder.com/150x150" width="150" height="150"
         alt="Картинка приложения «Пинк» с текстом и смайликом белого цвета">
     </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item">
+            <div class="comment">
+              <span class="comment__heading">Николай Петров</span>
+              <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </li>
+        </ul>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__wrapper price__wrapper--gray slider">
+        <h2 class="visually-hidden">Цены и тарифы</h2>
+        <table class="price__list slider__list">
+          <tr>
+            <td></td>
+            <td class="price__rate slider__item">база 1,99 USD</td>
+            <td class="price__rate slider__item">стандарт 3,99 USD</td>
+            <td class="price__rate slider__item">анлим 9,99 USD</td>
+          </tr>
+          <tr>
+            <td class="price__functions">Розовый фильтр</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="price__functions">Смайлики</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="price__functions">Комментарии</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="feedback">
+      <p class="feedback__text">Остались вопросы? Свяжитесь с нами!</p>
+    </div>
+    <div class="contacts">
+      <p><span class="contacts__heading">Звоните:</span>
+        <span class="contacts__text">+7 (812) 555-66-66</span>
+      </p>
+      <p><span class="contacts__heading">Пишите:</span>
+        <span class="contacts__text">mail@htmlacademy.ru</span>
+      </p>
+      <p><span class="contacts__heading">Приезжайте в гости:</span>
+        <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+      </p>
+    </div>
+    <div class="adress">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574076121247!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </footer>
 </body>
 
 </html>

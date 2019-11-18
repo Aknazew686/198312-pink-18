@@ -39,6 +39,140 @@
     <div class="contest__wrapper">
       <h1 class="contest__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
+    <section class="form">
+      <h2 class="visually-hidden">Форма для конкурса</h2>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <div class="form__wrapper form__wrapper--white">
+          <p class="form__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Пожалуйста,
+            заполните форму ниже:
+          </p>
+          <fieldset>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <div class="fildtext">
+                  <label class="fildtext__label" for="last-name">Фамилия</label>
+                  <input class="fildtext__input" type="text" name="last-name" id="last-name"
+                    placeholder="Укажите фамилию*">
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="fildtext">
+                  <label class="fildtext__label" for="first-name">Имя</label>
+                  <input class="fildtext__input" type="text" name="first-name" id="first-name"
+                    placeholder="Введите ваше имя *">
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="fildtext">
+                  <label class="fildtext__label" for="patronymic">Отчество</label>
+                  <input class="fildtext__input" type="text" name="patronymic" id="patronymic"
+                    placeholder="Ну и отчество тоже">
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__wrapper form__wrapper--gray">
+          <fieldset>
+            <legend class="filter__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="shark-selfie" id="shark-selfie" checked>
+                  <label class="checkbox__label" for="shark-selfie">Сделал селфи с акулой</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="burnt" id="burnt" checked>
+                  <label class="checkbox__label" for="burnt">Обгорел на пляже</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="сhak-norris" id="сhak-norris">
+                  <label class="checkbox__label" for="сhak-norris">Видел Чака Норриса</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="souvenirs" id="souvenirs">
+                  <label class="checkbox__label" for="souvenirs">Накупил сувениров</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="tower" id="tower" checked>
+                  <label class="checkbox__label" for="tower">Удержал башню</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="hotel" id="hotel">
+                  <label class="checkbox__label" for="hotel">Удержал башню</label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__wrapper form__wrapper--white">
+          <fieldset>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <div class="fildtext">
+                  <label class="fildtext__label" for="phone">Номер телефона</label>
+                  <input class="fildtext__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="fildtext">
+                  <label class="fildtext__label" for="email">Адрес почты</label>
+                  <input class="fildtext__input" type="text" name="email" id="email" placeholder="Введите почту *">
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__wrapper form__wrapper--gray">
+          <fieldset>
+            <legend class="filter__legend">С каким приложением путешествовали?</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <div class="radio">
+                  <input class="radio__input" type="radio" name="platform" value="iOS" id="iOS" checked>
+                  <label class="radio__label" for="iOS">Pink для iOS</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="radio">
+                  <input class="radio__input" type="radio" name="platform" value="Android" id="Android">
+                  <label class="radio__label" for="Android">Pink на Android</label>
+                </div>
+              </li>
+              <li class="filter__item">
+                <div class="radio">
+                  <input class="radio__input" type="radio" name="platform" value="windows-phone" id="windows-phone">
+                  <label class="radio__label" for="windows-phone">Windows Phone</label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__wrapper form__wrapper--white">
+          <div class="fildtext">
+            <p class="fildtext__textarea">
+              <label class="fildtext__label" for="message">Опишите свои эмоции</label>
+              <textarea class="fildtext__input" name="message" id="message"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </div>
+          <button class="filter__button" type="submit">Отправить форму</button>
+          <p class="filter__info">* — обязательные поля</p>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
