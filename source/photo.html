@@ -47,10 +47,13 @@
       </div>
       <div class="page-main__wrapper">
         <div class="container">
-          <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+
+          <p class="page-main__text page-main__text--header">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает
             ваших?
           </p>
         </div>
+
       </div>
     </div>
     <section class="gallery">
@@ -164,21 +167,43 @@
         </ul>
       </div>
       <div class="container">
-        <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="page-main__text page-main__text--footer">Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
       </div>
       <div class="page-main__wrapper page-main__wrapper--gray">
-        <section class="editing">
-          <h2 class="visually-hidden">Редактор фотографий</h2>
-          <img class="editing__img" src="https://via.placeholder.com/150x150" width="280" height="180"
-            alt="Фотография ледяной дороги зимой, с голыми кустарниками на обочине.">
-          <button class="button">Запостить</button>
-          <button class="button button--disabled">Отмена</button>
-        </section>
-      </div>
+        <div class="container">
+          <section class="editing">
+            <h2 class="visually-hidden">Редактор фотографий</h2>
+            <img class="editing__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374"
+              alt="Фотография ледяной дороги зимой, с голыми кустарниками на обочине.">
+            <div class="editing__wrapper">
+              <img class="editing__editor-crop" src="img/icon-editor-crop.svg" width="44" height="44"
+                alt="Иконка фильтра редактирования фотографии в форме смещенного квадрата розового цвета">
+              <img class="editing__editor-fill" src="img/icon-editor-fill.svg" width="44" height="44"
+                alt="Иконка фильтра редактирования фотографии в форме серой банки с краской">
+              <img class="editing__editor-contrast" src="img/icon-editor-contrast.svg" width="44" height="44"
+                alt="Иконка фильтра редактирования фотографии в форме серого круга с серым полукругом внутри него">
+            </div>
+
+            <div class="editing__controls">
+              <div class="editing__toggle"></div>
+            </div>
+        </div>
+        <div class="editing__border"></div>
+        <div class="container">
+
+          <button class="editing__button">Запостить</button>
+          <button class="editing__button editing__button--disabled">Отмена</button>
+
+        </div>
+    </section>
+
+    </div>
     </section>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
     <div class="container">
       <div class="logo-footer">
         <a class="logo-footer__link">
@@ -197,18 +222,19 @@
                 class="visually-hidden">Фейсбук</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--play" href="#"><span class="visually-hidden">Плей</span></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
       </div>
       <div class="copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          <img class="copyright__logo-image" src="img/logo-htmlacademy.svg" width="27" height="34"
             alt="Логотип «HTML Academy» розового цвета">
         </a>
       </div>
     </div>
+  </div>
   </footer>
 </body>
 
