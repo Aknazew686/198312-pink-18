@@ -1,6 +1,5 @@
 .advantages {
   background-color: @color-gray;
-  margin-bottom: 49px;
 }
 
 .advantages__list {
@@ -17,4 +16,23 @@
 
 .advantages__wrapper {
   padding-top: 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    width:310px;
+    order: 2;
+  }
+
+  .advantages__wrapper--flex {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
+  }
+
+  .advantages__image {
+    margin-top: 159px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
