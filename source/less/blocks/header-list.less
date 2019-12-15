@@ -12,8 +12,21 @@
 
 .header-list__item {
   padding: 26px 0;
+  text-align: center;
 }
 
 .header-list__link {
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .header-list {
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+
+    display: flex;
+    width: 625px;
+    justify-content: space-between;
+  }
 }

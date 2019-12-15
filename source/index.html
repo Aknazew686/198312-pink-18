@@ -10,37 +10,40 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <div class="page-header__row">
-        <div class="logo-wrapper">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-              alt="Логотип приложения «Пинк» с белыми буквами на темно-синем фоне">
-          </a>
-          <button class="toggle">Открыть меню</button>
+      <div class="page-header__wrapper">
+        <div class="page-header__row">
+          <div class="logo-wrapper">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+                alt="Логотип приложения «Пинк» с белыми буквами на темно-синем фоне">
+            </a>
+            <button class="toggle">Открыть меню</button>
+          </div>
         </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list header-list">
+              <li class="header-list__item">
+                <a class="header-list__link">Главная</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="https://htmlacademy.ru/intensive/adaptive ">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list header-list">
-            <li class="header-list__item">
-              <a class="header-list__link">Главная</a>
-            </li>
-            <li class="header-list__item">
-              <a class="header-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="header-list__item">
-              <a class="header-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="header-list__item">
-              <a class="header-list__link" href="https://htmlacademy.ru/intensive/adaptive ">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Приложение «Пинк»</h1>
+
     <div class="page-main__wrapper page-main__wrapper--index">
       <div class="container">
         <p class="page-main__heading">Взгляните на жизнь иначе!</p>
@@ -90,35 +93,43 @@
       <div class="advantages__wrapper">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="features">
-                <h3 class="features__title">Поднимает настроение</h3>
-                <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-                  несколько кликов!</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="features">
-                <h3 class="features__title">Меняет мир вокруг</h3>
-                <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                  усилить эффект</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="features">
-                <h3 class="features__title">Заводит новых друзей</h3>
-                <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                  заводите
-                  новых</p>
-              </div>
-            </li>
-          </ul>
-          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
-            alt="Картинка приложения «Пинк» с текстом и смайликом белого цвета">
+          <div class="advantages__wrapper advantages__wrapper--flex">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <div class="features">
+                  <h3 class="features__title">Поднимает настроение</h3>
+                  <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                    несколько кликов!</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="features">
+                  <h3 class="features__title">Меняет мир вокруг</h3>
+                  <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                    усилить эффект</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="features">
+                  <h3 class="features__title">Заводит новых друзей</h3>
+                  <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                    заводите
+                    новых</p>
+                </div>
+              </li>
+            </ul>
+            <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
+              alt="Картинка приложения «Пинк» с текстом и смайликом белого цвета">
+          </div>
         </div>
       </div>
     </section>
+    <article class="study">
+      <div class="container">
+        <div class="study__wrapper">
+          <span class="study__timer">24</span>
+        </div>
+    </article>
     <section class="reviews">
       <div class="container">
         <div class="reviews__wrapper slider">
@@ -143,40 +154,40 @@
     </section>
     <section class="price">
       <div class="price__wrapper price__wrapper--gray slider">
-          <div class="container">
-        <h2 class="visually-hidden">Цены и тарифы</h2>
-<table class="price__list slider__list">
-          <tr>
+        <div class="container">
+          <h2 class="visually-hidden">Цены и тарифы</h2>
+          <table class="price__list slider__list">
+            <tr>
               <td class="price__rate slider__item">база <span class="price__cost">1,99 USD</span></td>
-            <td></td>
-            <td class="price__rate slider__item">стандарт <span class="price__cost">3,99 USD</span></td>
-            <td class="price__rate slider__item">анлим <span class="price__cost">9,99 USD</span></td>
-          </tr>
-          <tr>
-            <td class="price__functions">Розовый фильтр</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="price__functions">Смайлики</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="price__functions">Комментарии</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </div>
+              <td></td>
+              <td class="price__rate slider__item">стандарт <span class="price__cost">3,99 USD</span></td>
+              <td class="price__rate slider__item">анлим <span class="price__cost">9,99 USD</span></td>
+            </tr>
+            <tr>
+              <td class="price__functions">Розовый фильтр</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="price__functions">Смайлики</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="price__functions">Комментарии</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </div>
     </section>
   </main>
