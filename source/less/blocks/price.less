@@ -25,7 +25,13 @@
   line-height: 1.25;
 }
 
-.price__functions {
+.price__wrapper--gray {
+  background-color: @color-gray;
+  padding-top: 68px;
+  padding-bottom: 50px;
+}
+
+.price__list td {
   font-size: 14px;
   font-weight: 400;
   line-height: 2.14;
@@ -36,12 +42,14 @@
   padding: 0;
 }
 
-.price__wrapper--gray {
-  background-color: @color-gray;
-  padding-top: 68px;
-  padding-bottom: 50px;
+.price__list {
+  border-collapse: collapse;
 }
 
-.price__list {
-  margin-bottom: 40px;
+@media (min-width: @tablet-width) {
+  .price__list td:first-child {
+    display: none;
+  }
 }
+
+

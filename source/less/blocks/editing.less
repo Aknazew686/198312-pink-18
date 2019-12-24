@@ -3,9 +3,7 @@
   height: 2px;
   width: 240px;
   background-color: #323232;
-  text-align: center;
-
-  margin-bottom: 34px;
+  margin: 0 auto;
 }
 
 .editing__toggle {
@@ -22,7 +20,10 @@
 }
 
 .editing__wrapper {
-  text-align: center;
+  display:flex;
+  width: 200px;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-top: 43px;
   margin-bottom: 40px;
 }
@@ -34,6 +35,7 @@
 
   margin: 0 auto;
   margin-bottom: 38px;
+  margin-top: 35px;
 }
 
 .editing__button {
@@ -55,4 +57,12 @@
   margin-top: 15px;
   border: solid 3px #dee0e1;
   color: #dee0e1;
+}
+
+@media (min-width: @tablet-width) {
+  .editing {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
+  }
 }

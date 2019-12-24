@@ -1,8 +1,15 @@
-.study__wrapper {
+.study {
+  display: none;
+  padding-top: 102px;
+  padding-bottom: 71px;
+}
+
+.study__clock {
  width: 202px;
  height: 202px;
  border: 17px solid @color-danger;
  border-radius: 50%;
+ position: relative;
 }
 
 .study__timer {
@@ -12,9 +19,96 @@
   font-weight: 700;
   color: @color-danger;
 
-  margin-left: 48px;
-  margin-top: 31px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.study__clock::after {
+  content: '';
+  position: absolute;
+  width: 318px;
+  height: 356px;
+  top: 77px;
+  left: 102px;
+  transform: translate(-50%, -50%);
+  background-image: url('../img/icon-timer.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.study__description-wrapper {
+  width: 310px;
+}
+
+.study__description-heading {
+  font-family: @font-main;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.study__description-text {
+  font-family: @font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: #283645;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.study__link {
+  font-family: @font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: @color-danger;
+
+  border-bottom: 1px solid @color-danger;
+}
+
+.study__flex {
+  display: flex;
+  width: 620px;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .study {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .study {
+    background-color: @color-gray;
+  }
+
+  .study__flex {
+    width: 940px;
+    justify-content: start;
+  }
+
+  .study__description-wrapper {
+    width: 400px;
+    margin-left: 176px;
+  }
+
+  .study__description-heading {
+    width: 300px;
+  }
+}
+
 
 
 
