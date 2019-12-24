@@ -9,13 +9,45 @@
 .contacts__paragraph {
   margin: 0;
   padding: 0;
+
+  display: flex;
+  width: 280px;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .contacts__heading {
   font-size: 18px;
   font-weight: 700;
+
+  margin: 0 auto;
+  margin-bottom: 11px;
 }
 
 .contacts__text {
   color: #d22856;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+  display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 865px;
+    margin: 0 auto;
+  }
+
+  .contacts__paragraph:nth-child(2) {
+    order: 3;
+  }
 }

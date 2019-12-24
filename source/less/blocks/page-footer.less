@@ -1,3 +1,32 @@
 .page-footer__wrapper {
+  display: none;
   padding: 40px 0;
+}
+
+.page-footer__wrapper--photo {
+  display: block;
+}
+
+.page-footer__flex {
+  display: flex;
+  width: 280px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__flex {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
+  }
+
+  .page-footer__wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__flex {
+    width: 940px;
+  }
 }

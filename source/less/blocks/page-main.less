@@ -72,10 +72,35 @@
 
    .page-main__heading {
     font-size: 40px;
-
-    width: 180px;
-    padding-top: 70px;
-    padding-bottom: 38px;
-    margin-left: 58px;
+    width: 357px;
+    margin: 0 auto;
+    padding-top: 93px;
+    padding-bottom: 150px;
   }
+
+  .page-main__wrapper--photo {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .page-main__text--header {
+    width: 437px;
+    margin: 0 auto;
+  }
+
+  .page-main__text--footer {
+    display: flex;
+    width: 422px;
+    flex-wrap: wrap;
+  }
+}
+
+  @media (min-width: @desktop-width) {
+    .page-main__wrapper--index {
+      height: 620px;
+      background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
+      background-size: auto, cover;
+      background-position: bottom right, center;
+     }
   }
