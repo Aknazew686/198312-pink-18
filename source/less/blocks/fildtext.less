@@ -3,13 +3,17 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
-  color: #d22856;
+  color: @color-danger;
   text-transform: uppercase;
   margin-left: 20px;
   margin-bottom: 19px;
 }
 
 .fildtext__input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.29;
+
   width: 276px;
   margin: 0;
   padding: 0;
@@ -24,4 +28,58 @@
 .fildtext__textarea {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .fildtext__label {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .fildtext--contacts {
+    display: flex;
+    width: 438px;
+    flex-wrap: wrap;
+  }
+
+  .fildtext__input {
+    width: 495px;
+  }
+
+  .fildtext__input--name {
+    width: 536px;
+  }
+
+  .fildtext__label--contacts {
+    margin-left: 80px;
+    order: 2;
+    margin-bottom: 40px;
+  }
+
+  .fildtext__input--contacts {
+    margin-left: 61px;
+    margin-bottom: 20px;
+  }
+
+  .fildtext__input--textarea {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-bottom: 152px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fildtext__input {
+    width: 338px;
+  }
+
+  .fildtext__input--name {
+    width: 380px;
+  }
+
+  .fildtext__input--textarea {
+    padding-right: 346px;
+    width: 467px;
+  }
 }

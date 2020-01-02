@@ -17,3 +17,56 @@
   display: block;
   margin-bottom: 57px;
 }
+
+.radio__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.radio__label {
+  position: relative;
+  padding-left: 70px;
+  display: inline-block;
+}
+
+.radio__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 41px;
+  height: 41px;
+  border: 2px solid #e9e9e9;
+  border-radius: 50%;
+}
+
+.radio__label::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  background: @color-danger;
+  display: none;
+}
+
+input:checked + span::before {
+  display: block;
+}
+@media (min-width: @tablet-width) {
+  .radio__input{
+    margin-left: 59px;
+  }
+}

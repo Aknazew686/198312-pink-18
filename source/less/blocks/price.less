@@ -9,6 +9,14 @@
   font-family: @font-main;
 }
 
+.price__flex {
+  display: flex;
+  width: 240px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .price__rate {
   font-size: 18px;
   font-weight: 700;
@@ -16,7 +24,6 @@
 
   color: #ffffff;
   background-color: @color-warning;
-  width: 280px;
 }
 
 .price__cost {
@@ -40,16 +47,66 @@
 
   margin: 0;
   padding: 0;
+  min-width: 280px;
+}
+
+.price__list td:first-child {
+  display: none;
+}
+
+.price__list th:first-child {
+  display: none;
 }
 
 .price__list {
   border-collapse: collapse;
 }
 
+.price__enabled-image {
+  width: 31px;
+  height: 21px;
+  fill: #3dc644;
+}
+
+.price__disabled-image {
+  width: 27px;
+  height: 26px;
+  fill: #f25b26;
+}
+
 @media (min-width: @tablet-width) {
   .price__list td:first-child {
+    display: block;
+    border: 2px solid #e5e5e5;
+  }
+
+  .price__list th:first-child {
+    display: block;
+  }
+
+  .price__list td {
+  min-width: 154px;
+  }
+
+  .price__flex {
+  width: 154px;
+  justify-content: center;
+  }
+
+  .price__text {
     display: none;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .price__list td {
+    min-width: 233px;
+  }
+
+  .price__flex {
+    width: 233px;
+  }
+}
+
 
 
