@@ -28,6 +28,22 @@
 
   margin-top: 20px;
   margin-bottom: 28px;
+  padding-left: 33px;
+  position: relative;
+}
+
+.photo__like::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 10px;
+  left: 7px;
+  transform: translateX(-50%);
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
 }
 
 .photo {
@@ -38,6 +54,29 @@
   .photo {
     width: 300px;
     background-color: #f2f2f2;
+  }
+
+  .photo__like::after {
+    display: none;
+  }
+
+  .photo__like {
+    padding-left: 0;
+    padding-right: 155px;
+  }
+
+  .photo__like::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 235px;
+    transform: translateX(-50%);
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
   }
 
   .photo__text {
