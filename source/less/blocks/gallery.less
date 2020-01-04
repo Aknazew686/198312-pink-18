@@ -22,7 +22,7 @@
 
 .gallery__wrapper {
   background-color: @color-gray;
-  padding-left: 17px;
+  padding: 0 17px;
   margin-bottom: 20px;
 }
 
@@ -52,7 +52,24 @@
 
   margin-top: 20px;
   margin-bottom: 28px;
+  padding-left: 33px;
+  position: relative;
 }
+
+.gallery__like::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 10px;
+  left: 7px;
+  transform: translateX(-50%);
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
 
 .gallery__item {
   margin-bottom: 20px;
@@ -63,7 +80,30 @@
 
 @media (min-width: @tablet-width) {
   .gallery__wrapper {
+    padding: 0 29px;
+  }
+
+  .gallery__like {
     padding-left: 0;
+    padding-right: 31px;
+  }
+
+  .gallery__like::after {
+    display: none;
+  }
+
+  .gallery__like::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 117px;
+    transform: translateX(-50%);
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
   }
 
   .gallery__wrapper-flex {
