@@ -13,13 +13,6 @@
   list-style: none;
 }
 
-.gallery__panorama {
-  background-image: url(../img/panorama-mobile@1x.jpg);
-  height: 137px;
-  background-size: cover;
-  background-position: center;
-}
-
 .gallery__wrapper {
   background-color: @color-gray;
   padding: 0 17px;
@@ -49,27 +42,30 @@
   line-height: 2;
   color: #d22856;
   border: none;
+  text-transform: uppercase;
 
   margin-top: 20px;
   margin-bottom: 28px;
-  padding-left: 33px;
   position: relative;
 }
 
-.gallery__like::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 10px;
-  left: 7px;
-  transform: translateX(-50%);
-  background-image: url(../img/icon-heart.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  cursor: pointer;
+.gallery__flex {
+  display: flex;
+  width: 125px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.gallery__button {
+  width: 13px;
+  height: 12px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
 
 .gallery__item {
   margin-bottom: 20px;
@@ -81,29 +77,6 @@
 @media (min-width: @tablet-width) {
   .gallery__wrapper {
     padding: 0 29px;
-  }
-
-  .gallery__like {
-    padding-left: 0;
-    padding-right: 31px;
-  }
-
-  .gallery__like::after {
-    display: none;
-  }
-
-  .gallery__like::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    top: 10px;
-    left: 117px;
-    transform: translateX(-50%);
-    background-image: url(../img/icon-heart.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
   }
 
   .gallery__wrapper-flex {
@@ -119,24 +92,19 @@
     padding-bottom: 30px;
   }
 
-  .gallery__panorama {
-    background-image: url(../img/panorama-tablet@1x.jpg);
-    height: 510px;
-  }
-
   .gallery__list {
     display: flex;
     width: 620px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .gallery__button {
+    order: 2;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .gallery__panorama {
-   background-image: url(../img/panorama-desktop@1x.jpg);
-  }
-
   .gallery__wrapper-flex {
     width: 890px;
   }
