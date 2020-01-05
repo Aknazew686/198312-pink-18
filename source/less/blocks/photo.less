@@ -25,24 +25,27 @@
   line-height: 2;
   color: #d22856;
   border: none;
+  text-transform: uppercase;
 
   margin-top: 20px;
   margin-bottom: 28px;
-  padding-left: 33px;
-  position: relative;
 }
 
-.photo__like::after {
-  content: "";
-  position: absolute;
-  width: 12px;
+.photo__flex {
+  display: flex;
+  width: 125px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo__button {
+  width: 13px;
   height: 12px;
-  top: 10px;
-  left: 7px;
-  transform: translateX(-50%);
+  font-size: 0;
+  background-color: transparent;
+  border: none;
   background-image: url(../img/icon-heart.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
   cursor: pointer;
 }
 
@@ -56,29 +59,6 @@
     background-color: #f2f2f2;
   }
 
-  .photo__like::after {
-    display: none;
-  }
-
-  .photo__like {
-    padding-left: 0;
-    padding-right: 155px;
-  }
-
-  .photo__like::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    top: 10px;
-    left: 235px;
-    transform: translateX(-50%);
-    background-image: url(../img/icon-heart.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
-  }
-
   .photo__text {
     min-height: 46px;
   }
@@ -89,5 +69,13 @@
 
   .photo__wrapper:nth-child(3) {
     margin-top: 100px;
+  }
+
+  .photo__flex {
+    width: 242px;
+  }
+
+  .photo__button {
+    order: 2;
   }
 }
