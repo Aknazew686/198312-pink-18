@@ -7,8 +7,17 @@
   width: 280px;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
   padding: 22px 0;
   border-bottom: 1px solid #000000;
+}
+
+.page-header__logo-image--tablet {
+  display: none;
+}
+
+.page-header__logo-image--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,6 +25,14 @@
     width: 620px;
     padding-top: 27px;
     padding-bottom: 43px;
+ }
+
+ .page-header__logo-image--mobile {
+   display: none;
+ }
+
+ .page-header__logo-image--tablet {
+  display: block;
  }
 }
 
@@ -27,5 +44,21 @@
 
  .page-header__logo-wrapper {
    border: none;
+ }
+
+ .page-header__logo-image--tablet {
+  display: none;
+ }
+
+ .page-header__logo-image--desktop {
+  display: block;
+ }
+
+ .page-header--desktop {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.3);
  }
 }
