@@ -55,6 +55,12 @@
   .features__text {
     text-align: left;
   }
+
+  .features__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -75,5 +81,9 @@
 
   .features__image--disabled {
     display: block;
+  }
+
+  .features__image-wrapper {
+    position: static;
   }
 }
