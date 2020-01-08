@@ -8,36 +8,27 @@
   list-style: none;
 }
 
-.advantages__image {
-  display: block;
-  margin: 0 auto;
-}
+
 
 .advantages__wrapper {
   background-color: @color-gray;
   padding-top: 58px;
 }
 
-.advantages__image--disabled {
-  display: none;
-}
+
 
 @media (min-width: @tablet-width) {
   .advantages__list {
     width: 310px;
+    padding-left: 310px;
     order: 2;
+    position: relative;
   }
 
   .advantages__wrapper--flex {
     display: flex;
     width: 620px;
     justify-content: space-between;
-  }
-
-  .advantages__image {
-    margin-top: 159px;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -52,25 +43,11 @@
     display: flex;
     width: 876px;
     justify-content: space-between;
+    padding-left: 0;
     margin: 0 auto;
-  }
-
-  .advantages__image {
-    margin: 0;
   }
 
   .advantages__wrapper {
     padding: 0;
-  }
-
-  .advantages__wrapper-image {
-    display: flex;
-    width: 820px;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .advantages__image--disabled {
-    display: block;
   }
 }
