@@ -1,13 +1,30 @@
 .gallery {
-  font-family: @font-main;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   color: #283645;
+  position: relative;
 }
 
 .gallery__panorama {
   width: 100%;
+}
+
+.gallery::after {
+  position: absolute;
+  content: 'панорама дня';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  color: #fff;
+  text-transform: uppercase;
+  background: #d32355;
+  width: 106px;
+  top: 0;
+  left: 50%;
+  padding: 5px 15px;
+  padding-left: 19px;
+  padding-bottom: 7px;
 }
 
 .gallery__list {
@@ -28,7 +45,7 @@
 
   margin: 0;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 12px;
 }
 
 .gallery__time {
@@ -36,26 +53,30 @@
 }
 
 .gallery__text {
+  width: 278px;
+  line-height: 1.75;
   margin: 0;
   padding: 0;
 }
 
 .gallery__like {
-  font-family: @font-main;
+  font-size: 12px;
   font-weight: 400;
   line-height: 2;
   color: #d22856;
-  border: none;
+  background-color: @color-gray;
+  border: 0;
   text-transform: uppercase;
-
-  margin-top: 20px;
-  margin-bottom: 28px;
+  margin-top: 9px;
+  margin-bottom: 19px;
+  margin-left: 13px;
   position: relative;
+
 }
 
 .gallery__flex {
   display: flex;
-  width: 125px;
+  width: 127px;
   justify-content: space-between;
   align-items: center;
 }
@@ -63,6 +84,8 @@
 .gallery__button {
   width: 13px;
   height: 12px;
+  margin-bottom: 9px;
+  margin-left: 1px;
   font-size: 0;
   background-color: transparent;
   border: none;
@@ -92,8 +115,9 @@
   }
 
   .gallery__text {
+    width: 520px;
     order: 3;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   .gallery__list {
@@ -104,7 +128,36 @@
   }
 
   .gallery__button {
+    margin-right: 4px;
+    margin-top: 18px;
+    margin-bottom: 0;
     order: 2;
+  }
+
+  .gallery::after {
+    top: 56px;
+    left: 77%;
+  }
+
+  .gallery__panorama {
+    height: 509px;
+  }
+
+  .gallery__name {
+    padding-top: 18px;
+  }
+
+  .gallery__flex {
+    width: 142px;
+  }
+
+  .gallery__like {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .gallery__list {
+    margin-top: 50px;
   }
 }
 
@@ -115,6 +168,32 @@
 
   .gallery__list {
     width: 940px;
+    margin-top: 47px;
+  }
+
+  .gallery::after {
+    left: 72%;
+  }
+
+  .gallery__panorama {
+    height: 505px;
+  }
+
+  .gallery__text {
+    width: 874px;
+  }
+
+  .gallery__like {
+    margin-top: 18px;
+  }
+
+  .gallery__flex {
+    width: 149px;
+  }
+
+  .gallery__button {
+    margin-right: 10px;
+    margin-top: 18px;
   }
 }
 

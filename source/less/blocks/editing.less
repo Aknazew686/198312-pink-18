@@ -3,7 +3,7 @@
   height: 2px;
   width: 240px;
   background-color: #323232;
-  margin: 0 auto;
+  margin-left: 18px;
 }
 
 .editing__editor-crop {
@@ -20,10 +20,10 @@
 
 .editing__toggle {
   position: absolute;
-  width: 14px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   top: 50%;
-  left: 193px;
+  left: 192px;
   transform: translateY(-50%);
   background-color: @color-gray;
   border: solid 2px #d22856;
@@ -33,11 +33,11 @@
 
 .editing__wrapper-controls {
   display: flex;
-  width: 200px;
+  width: 198px;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 43px;
-  margin-bottom: 40px;
+  margin-left: 34px;
+  margin-top: 34px;
+  margin-bottom: 29px;
   align-items: center;
 }
 
@@ -63,17 +63,18 @@
   font-weight: 700;
   line-height: 1;
   color: @color-danger;
+  background-color: @color-gray;
 
   padding: 0;
   margin: 0;
-  padding: 20px 91px;
+  padding: 15px 87px;
   border: solid 3px @color-danger;
   border-radius: 30px;
 }
 
 .editing__button--disabled {
-  padding: 20px 105px;
-  margin-top: 15px;
+  padding: 16px 99px;
+  margin-top: 13px;
   border: solid 3px #dee0e1;
   color: #dee0e1;
 }
@@ -88,34 +89,66 @@
     height: 212px;
     margin: 0;
 
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    margin-left: 25px;
     align-items: start;
+  }
+
+
+
+  .editing__editor-crop {
+    width: 25px;
+    height: 23px;
+    margin-left: 6px;
   }
 
   .editing__wrapper-button {
     border: none;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 31px;
   }
 
   .editing__editor-fill {
     fill: @color-danger;
+    width: 28px;
+    height: 22px;
+    margin-left: 5px;
+    margin-top: 4px;
   }
+
+  .editing__button {
+    padding: 16px 75px;
+    padding-left: 76px;
+    padding-right: 80px;
+}
+
+.editing__button--disabled {
+  margin-top: 24px;
+  padding-left: 90px;
+  padding-right: 93px;
+}
+
 
   .editing__editor-contrast {
     fill: @color-danger;
+    width: 18px;
+    height: 48px;
+    margin-left: 12px;
   }
   .editing__controls-all {
     position: relative;
     height: 2px;
-    width: 204px;
+    width: 201px;
     background-color: #233343;
   }
 
   .editing__toggle-crop {
     position: absolute;
-    width: 14px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     top: 50%;
-    left: 145px;
+    left: 147px;
     transform: translateY(-50%);
     background-color: @color-gray;
     border: solid 2px #d22856;
@@ -125,8 +158,8 @@
 
   .editing__toggle-fill {
     position: absolute;
-    width: 14px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     top: 50%;
     left: 26px;
     transform: translateY(-50%);
@@ -138,8 +171,8 @@
 
   .editing__toggle-contrast {
     position: absolute;
-    width: 14px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     top: 50%;
     left: 97px;
     transform: translateY(-50%);
@@ -157,9 +190,13 @@
 
     padding-bottom: 24px;
     border-bottom: 1px solid #dee0e1;
+    padding-top: 8px;
   }
 
-
+  .editing__flex--fill {
+    padding-bottom: 22px;
+    padding-top: 24px;
+  }
 
   .editing__wrapper-flex {
     display: flex;
@@ -177,7 +214,68 @@
 
 @media (min-width: @desktop-width) {
   .editing__wrapper {
-    width: 800px;
+    width: 781px;
     margin: 0 auto;
+  }
+
+  .editing__wrapper-flex {
+    width: 403px;
+  }
+
+  .editing__controls-all {
+    width: 288px;
+  }
+
+  .editing__flex {
+    width: 387px;
+    padding-bottom: 7px;
+  }
+
+  .editing__editor-crop {
+    width: 48px;
+    height: 57px;
+  }
+
+  .editing__wrapper-controls {
+    margin-left: 5px;
+  }
+
+  .editing__toggle-crop {
+    left: 72px;
+  }
+
+  .editing__editor-fill {
+    width: 48px;
+    height: 57px;
+    margin-left: 7px;
+  }
+
+  .editing__toggle-fill {
+    left: 248px;
+  }
+
+  .editing__flex--fill {
+    padding-top: 4px;
+  }
+
+  .editing__editor-contrast {
+    width: 34px;
+    height: 50px;
+  }
+
+  .editing__toggle-contrast {
+    left: 161px;
+  }
+
+  .editing__img {
+    margin-top: 15px;
+  }
+
+  .editing__wrapper-button {
+    display: flex;
+  }
+
+  .editing__button {
+    margin: 0;
   }
 }

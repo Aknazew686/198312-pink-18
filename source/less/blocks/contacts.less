@@ -16,38 +16,65 @@
   margin: 0 auto;
 }
 
+.contacts__paragraph:last-child {
+  margin-bottom: 20px;
+}
+
 .contacts__heading {
   font-size: 18px;
   font-weight: 700;
 
   margin: 0 auto;
-  margin-bottom: 11px;
+  margin-bottom: 2px;
 }
 
 .contacts__text {
   color: #d22856;
   text-align: center;
+  line-height: 1.2;
 
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
   display: flex;
-    width: 620px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 620px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .contacts__paragraph:nth-child(2) {
+  margin-left: 32px;
+ }
+
+ .contacts__paragraph:last-child {
+   margin-top: 28px;
+   margin-bottom: 10px;
  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    width: 865px;
+    width: 945px;
     margin: 0 auto;
   }
 
   .contacts__paragraph:nth-child(2) {
     order: 3;
   }
+
+  .contacts__paragraph:last-child {
+    margin: 0;
+  }
+
+ .contacts__text--phone {
+   margin-top: 13px;
+ }
+
+ .contacts__text--mail {
+   margin-top: 20px;
+   margin-left: 30px;
+ }
 }

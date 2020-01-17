@@ -3,7 +3,7 @@
 
   margin: 0;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 12px;
 }
 
 .photo__time {
@@ -20,22 +20,35 @@
 }
 
 .photo__like {
-  font-family: @font-main;
+
   font-weight: 400;
   line-height: 2;
+  font-size: 12px;
   color: #d22856;
-  border: none;
+  background-color: @color-gray;
+  border: 0;
   text-transform: uppercase;
-
-  margin-top: 20px;
-  margin-bottom: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .photo__flex {
   display: flex;
-  width: 125px;
+  width: 127px;
   justify-content: space-between;
   align-items: center;
+}
+
+.photo__flex--sergey {
+  width: 113px;
+}
+
+.photo__flex--nadeshda {
+  width: 134px;
+}
+
+.photo__like--nadeshda {
+  margin-top: 11px;
 }
 
 .photo__button {
@@ -47,6 +60,8 @@
   background-image: url(../img/icon-heart.svg);
   background-repeat: no-repeat;
   cursor: pointer;
+  margin-bottom: 9px;
+  margin-left: 1px;
 }
 
 .photo {
@@ -77,5 +92,21 @@
 
   .photo__button {
     order: 2;
+  }
+
+  .photo__name {
+    padding-top: 18px;
+  }
+
+  .photo__like {
+    padding-left: 0;
+    margin-top: 14px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    margin-bottom: 34px;
   }
 }

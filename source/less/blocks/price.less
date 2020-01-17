@@ -1,29 +1,66 @@
 .price__toggles {
+  display: flex;
+  width: 59px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin: 0 auto;
+  padding-top: 41px;
 
-  text-align: center;
+  align-items: center;
 }
 
-.price {
-  font-family: @font-main;
+.price__wrapper {
+  background-image: url(../img/bg-triangle-white.svg);
+  background-position: 50% -22px;
+  background-repeat: no-repeat;
 }
+
+.price__rate--hit::after {
+  content: 'хит';
+  font-weight: 700;
+  font-size: 12px;
+  background: #d32355;
+  position: absolute;
+  width: 100px;
+  top: 12px;
+  left: -27px;
+  padding: 5px 0;
+  transform: rotate(-45deg);
+ }
 
 .price__flex {
   display: flex;
-  width: 240px;
+  width: 239px;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding-top: 14px;
+  padding-left: 5px;
+  padding-bottom: 15px;
 }
+
+.price__rate--hit {
+  position: relative;
+  overflow: hidden;
+}
+
 
 .price__rate {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.67;
-
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-bottom: 20px;
   color: #ffffff;
   background-color: @color-warning;
+  border-left: 2px solid #e6e6e6;
+}
+
+.price__rate-wrapper {
+  width: 110px;
+  margin: 0 auto;
 }
 
 .price__cost {
@@ -34,8 +71,9 @@
 
 .price__wrapper--gray {
   background-color: @color-gray;
-  padding-top: 68px;
+  padding-top: 87px;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .price__list td {
@@ -44,10 +82,11 @@
   line-height: 2.14;
   color: #283645;
   border: solid 2px #e5e5e5;
+  text-transform: uppercase;
 
   margin: 0;
   padding: 0;
-  min-width: 280px;
+  min-width: 277px;
 }
 
 .price__list td:first-child {
@@ -59,6 +98,7 @@
 }
 
 .price__list {
+  transform: translateX(-280px);
   border-collapse: collapse;
 }
 
@@ -80,31 +120,116 @@
     border: 2px solid #e5e5e5;
   }
 
+  .price__rate {
+    font-size: 16px;
+    padding-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  .price__rate-wrapper {
+    width: 91px;
+  }
+
+  .price__wrapper--gray {
+    padding-bottom: 66px;
+  }
+
+  .price__cost {
+    font-size: 18px;
+  }
+
   .price__list th:first-child {
     display: block;
   }
 
   .price__list td {
-  min-width: 154px;
+    min-width: 153px;
+    text-transform: none;
+  }
+
+.price__title {
+  padding-left: 16px;
+}
+
+.price__toggles {
+  display: none;
+}
+
+  .price__list {
+    transform: none;
   }
 
   .price__flex {
-  width: 154px;
+  width: 142px;
   justify-content: center;
+  padding-bottom: 14px;
+  padding-top:7px;
   }
 
   .price__text {
     display: none;
   }
+
+  .price__rate--hit::after {
+  content: 'хит';
+  font-weight: 700;
+  font-size: 12px;
+  background: #d32355;
+  position: absolute;
+  width: 100px;
+  top: 5px;
+  left: -30px;
+  padding: 5px 0;
+  transform: rotate(-45deg);
+ }
 }
 
 @media (min-width: @desktop-width) {
   .price__list td {
-    min-width: 233px;
+    min-width: 232px;
   }
 
+  .price__rate--hit::after {
+    content: 'хит';
+    font-weight: 700;
+    font-size: 12px;
+    background: #d32355;
+    position: absolute;
+    width: 100px;
+    top: 12px;
+    left: -27px;
+    padding: 5px 0;
+    transform: rotate(-45deg);
+   }
+
   .price__flex {
-    width: 233px;
+    width: 229px;
+    padding-top: 21px;
+  }
+
+  .price__wrapper--gray {
+    padding-top: 137px;
+    padding-bottom: 95px;
+  }
+
+  .price__rate-wrapper {
+    width: 103px;
+    font-size: 18px;
+  }
+
+  .price__rate {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .price__cost {
+    font-size: 24px;
+  }
+
+  .price__title {
+    font-size: 18px;
+    padding-left: 21px;
   }
 }
 

@@ -10,7 +10,7 @@
   line-height: 1;
   color: #ffffff;
 
-  padding: 20px 34px;
+  padding: 16px 35px;
   margin-bottom: 32px;
   border-radius: 30px;
   border: solid 3px #ffffff;
@@ -18,14 +18,14 @@
 }
 
 .dowload__list {
-  width: 210px;
+  width: 204px;
   display: flex;
   justify-content: space-between;
 
   margin: 0;
   padding: 0;
-  margin: 0 38px;
-  margin-bottom: 29px;
+  margin-left: 37px;
+  margin-bottom: 19px;
   align-items: center;
   list-style: none;
 }
@@ -44,7 +44,7 @@
 
 .dowload__wrapper {
   padding-top: 28px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,8 +55,39 @@
     width: 300px;
   }
 
+  .dowload__list {
+   margin-left: 46px;
+   margin-bottom: 33px;
+  }
+
+  .dowload__wrapper {
+    padding-top: 0;
+  }
+
+  .dowload__button {
+    line-height: 0.9;
+    padding: 16px 46px;
+    margin-bottom: 47px;
+  }
+
   .dowload {
     margin-top: -351px;
     background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .dowload {
+    margin-top: -403px;
+  }
+
+  .dowload__button {
+    font-size: 21px;
+    padding: 15px 29px;
+    margin-bottom: 67px;
+  }
+
+  .dowload__list {
+    margin-bottom: 52px;
   }
 }

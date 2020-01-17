@@ -13,6 +13,11 @@
   flex-wrap: wrap;
 }
 
+.page-footer__wrapper--form {
+  display: block;
+  padding-top: 60px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__flex {
     display: flex;
@@ -22,16 +27,22 @@
 
   .page-footer__wrapper {
     display: block;
+    padding-top: 32px;
   }
+
+  .page-footer__wrapper--photo {
+    padding-top: 36px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
   .page-footer__flex {
-    width: 940px;
+    width: 941px;
   }
 
-  .page-footer__wrapper {
-    padding-top: 40px;
+  .page-footer__wrapper--photo {
+    padding-top: 98px;
     padding-bottom: 75px;
   }
 }

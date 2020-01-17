@@ -11,9 +11,13 @@
   list-style: none;
 }
 
+.reviews {
+  background-color: #ffffff;
+}
+
 .reviews__toggles {
   display: flex;
-  width: 62px;
+  width: 59px;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -26,7 +30,27 @@
 }
 
 .reviews__wrapper {
-  padding-top: 49px;
+  padding-top: 42px;
   padding-bottom: 46px;
+}
 
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    padding-top: 19px;
+    padding-bottom: 22px;
+  }
+
+  .reviews__toggles {
+    margin-left: 278px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    padding-top: 72px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
 }

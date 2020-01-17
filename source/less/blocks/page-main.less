@@ -8,7 +8,7 @@
 
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 18px;
   padding-bottom: 53px;
 }
 
@@ -24,16 +24,32 @@
 }
 
 .page-main__text--header {
-  padding: 58px 0;
+  width: 245px;
+
+ padding-top: 46px;
+ padding-bottom: 50px;
+ margin: 0 auto;
 }
 
 .page-main__text--footer {
-  padding: 52px 0;
+  padding-top: 40px;
+  padding-bottom: 73px;
 }
 
 .page-main__wrapper {
  background-repeat: no-repeat;
   background-color: #ffffff;
+}
+
+.page-main__wrapper--photo .page-main__heading {
+  padding-top: 24px;
+  padding-bottom: 79px;
+  margin: 0 auto;
+}
+
+.page-main__wrapper--form .page-main__heading {
+  line-height: 1.2;
+  padding-top: 30px;
 }
 
 .page-main__wrapper--gray{
@@ -43,10 +59,10 @@
 }
 
 .page-main__wrapper--index {
-  height: 462px;
+  min-height: 394px;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
-  background-size: auto, cover;
-  background-position: bottom left, center;
+  background-size: 258px, cover;
+  background-position: calc(50% - 31px) 100%,center;
 }
 
 @media (min-resolution: @retina) {
@@ -71,7 +87,7 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: cover;
   background-position: center;
-  margin-bottom: 56px;
+  margin-bottom: 46px;
 }
 
 @media (min-resolution: @retina) {
@@ -82,10 +98,10 @@
 
 @media (min-width: @tablet-width) {
   .page-main__wrapper--index {
-    height: 620px;
+    height: 618px;
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
-    background-size: auto, cover;
-    background-position: bottom right, center;
+    background-size: 703px, cover;
+    background-position: 50% 100%, center;
    }
 
    @media (min-resolution: @retina) {
@@ -95,10 +111,38 @@
    }
 
    .page-main__heading {
+    font-weight: 300;
+    line-height: 1.2;
+    width: 360px;
+  }
+
+  .page-main__wrapper--index .page-main__heading {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    width: 230px;
+    padding-top: 92px;
+    margin: 0;
+    margin-left: 35px;
+  }
+
+  .page-main__wrapper--photo .page-main__heading {
     font-size: 50px;
-    width: 480px;
+    font-weight: 300;
+    line-height: 1.2;
+    width: 360px;
+    padding-top: 67px;
+    padding-bottom: 142px;
     margin: 0 auto;
-    padding: 80px 0;
+  }
+
+  .page-main__wrapper--form .page-main__heading {
+    font-size: 50px;
+    width: 600px;
+    padding-top: 68px;
+    padding-bottom: 81px;
+    margin: 0 auto;
+}
   }
 
   .page-main__wrapper--photo {
@@ -114,14 +158,29 @@
   }
 
   .page-main__text--header {
-    width: 437px;
+    width: 459px;
     margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.67;
+    padding-top: 93px;
+    padding-bottom: 76px;
+  }
+
+  .page-main__text--footer {
+    font-size: 18px;
+    padding-bottom: 95px;
+  }
+
+  .page-main__wrapper--gray {
+    padding-top: 58px;
+    padding-bottom: 47px;
   }
 
   .page-main__wrapper--form {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 93px;
   }
 
   @media (min-resolution: @retina) {
@@ -129,14 +188,14 @@
       background-image: url(../img/bg-back-tablet@2x.jpg);
     }
   }
-}
+
 
   @media (min-width: @desktop-width) {
     .page-main__wrapper--index {
-      height: 620px;
+      height: 854px;
       background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
-      background-size: auto, cover;
-      background-position: bottom right, center;
+      background-size: 1051px, cover;
+      background-position: calc(50% + 71px) 100%, center;
      }
 
      @media (min-resolution: @retina) {
@@ -146,7 +205,15 @@
      }
 
      .page-main__text--header {
-       width: 453px;
+      width: 591px;
+      padding-bottom: 88px;
+     }
+
+     .page-main__wrapper--index .page-main__heading {
+       font-size: 50px;
+       margin-left: 31px;
+       padding-top: 218px;
+       width: 239px;
      }
 
      .page-main__wrapper--form {
@@ -172,8 +239,25 @@
     }
 
     .page-main__heading {
-      width: 755px;
-      padding-top: 75px;
-      padding-bottom: 100px;
+      font-size: 50px;
+      width: 390px;
+      padding-top: 173px;
+      padding-bottom: 102px;
+      padding-left: 0;
+    }
+
+    .page-main__wrapper--photo .page-main__heading {
+      padding-top: 173px;
+      padding-bottom: 102px;
+      margin: 0 auto;
+    }
+
+    .page-main__text--footer {
+      padding-top: 2px;
+    }
+
+    .page-main__wrapper--gray {
+      padding-top: 38px;
+      padding-bottom: 51px;
     }
   }
