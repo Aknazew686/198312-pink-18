@@ -8,4 +8,18 @@
   .logo-footer {
     margin: 0;
   }
+
+  .logo-footer__image--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-footer__image--mobile {
+    display: none;
+  }
+
+  .logo-footer__image--desktop {
+    display: block;
+  }
 }

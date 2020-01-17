@@ -38,39 +38,70 @@
 @media (min-width: @tablet-width) {
   .fildtext__label {
     margin-left: 0;
-    margin-right: 17px;
+    margin-right: 14px;
   }
 
   .fildtext--contacts {
     display: flex;
-    width: 438px;
+    width: 558px;
     flex-wrap: wrap;
   }
 
   .fildtext__input {
-    width: 495px;
+    width: 501px;
+    margin-bottom: 46px;
   }
 
   .fildtext__input--name {
-    width: 536px;
+    width: 541px;
   }
 
   .fildtext__label--contacts {
-    margin-left: 80px;
+    margin-left: 77px;
     order: 2;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   .fildtext__input--contacts {
     margin-left: 61px;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+    margin-left: 56px;
+  }
+
+  .fildtext--contacts {
+    position: relative;
+  }
+
+  .fildtext--contacts::after {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 61px;
+    background-color: #e6e6e6;
+    top: 7px;
+    left: 495px;
+  }
+
+  .fildtext--phone::after {
+    position: absolute;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .fildtext--mail::after {
+    position: absolute;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .fildtext__input--textarea {
+    width: 477px;
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding-bottom: 152px;
+    padding-bottom: 113px;
   }
 }
 
