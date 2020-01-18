@@ -66,6 +66,7 @@
     margin-left: 61px;
     margin-bottom: 9px;
     margin-left: 56px;
+    padding-right: 60px;
   }
 
   .fildtext--contacts {
@@ -79,7 +80,7 @@
     height: 61px;
     background-color: #e6e6e6;
     top: 7px;
-    left: 495px;
+    right: 0;
   }
 
   .fildtext--phone::after {
@@ -107,15 +108,25 @@
 
 @media (min-width: @desktop-width) {
   .fildtext__input {
-    width: 338px;
+    width: 317px;
   }
 
   .fildtext__input--name {
-    width: 380px;
+    width: 358px;
   }
 
   .fildtext__input--textarea {
-    padding-right: 346px;
-    width: 467px;
+    padding-right: 270px;
+    width: 525px;
+    padding-bottom: 47px;
+    margin-bottom: 42px;
+  }
+
+  .fildtext--contacts {
+    width: 408px;
+  }
+
+  .fildtext__label--contacts {
+    margin-bottom: 0;
   }
 }
