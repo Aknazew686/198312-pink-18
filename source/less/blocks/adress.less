@@ -1,15 +1,16 @@
 .adress__map {
   width: 100%;
+  height: 200px;
+  border: none;
 }
 
-@media (min-width: @tablet-width) {
-  .adress {
+.adress {
   position: relative;
- }
+}
 
- .adress::after {
-   content: '';
-   position: absolute;
+.adress::after {
+  content: '';
+  position: absolute;
   background-image: url(../img/bg-triangle-white-footer.svg);
   width: 100%;
   height: 74px;
@@ -18,15 +19,17 @@
   transform: translateX(-50%,);
   background-repeat: no-repeat;
   background-position: 0 0;
- }
+}
 
- .adress__map {
-   height: 373px;
- }
+@media (min-width: @tablet-width) {
+.adress__map {
+  height: 373px;
+}
 }
 
 @media (min-width: @desktop-width) {
   .adress__map {
     height: 523px;
+    margin-bottom: 33px;
   }
 }

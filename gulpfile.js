@@ -48,19 +48,21 @@ gulp.task("images", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src([
+    "source/img/icon-*.svg",
+    "source/img/logo-pink-white-mobile.svg",
+    "source/img/logo-pink-white-tablet.svg",
+    "source/img/logo-pink-white-desktop.svg",
+    "source/img/logo-pink-blue-desktop.svg",
+    "source/img/logo-pink-blue-mobile.svg",
+    "source/img/logo-htmlacademy.svg"
+    ])
   .pipe(svgstore({
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
 });
-
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-  .pipe(posthtml())
-  .pipe(gulp.dest("source"));
-  });
 
   gulp.task("html", function () {
     return gulp.src("source/*.html")
@@ -96,7 +98,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
