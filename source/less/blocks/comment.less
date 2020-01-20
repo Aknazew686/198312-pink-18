@@ -16,7 +16,7 @@
   display: none;
 }
 
-.comment__wrapper{
+.comment__wrapper {
   text-align: center;
 }
 
@@ -32,74 +32,70 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    }
+  }
 
-    .comment__heading {
+  .comment__heading {
     font-size: 20px;
-    }
+  }
 
-    .comment__text {
+  .comment__text {
     font-size: 18px;
     line-height: 1.67;
     margin-top: 14px;
     margin-bottom: 33px;
-    }
-
-    .comment__personal {
-      font-family: @font-main;
-      font-weight: 400;
-      line-height: 2.14;
-      color: #283645;
-      display: block;
-      margin-bottom: 34px;
-    }
-
-    .comment__wrapper {
-    order: 2;
-    margin: 0 auto;
-    }
   }
 
-  @media (min-width: @desktop-width) {
-    .comment {
-      width: 690px;
-      margin: 0 auto;
+  .comment__personal {
+    font-weight: 400;
+    line-height: 2.14;
+    color: #283645;
+    display: block;
+    margin-bottom: 34px;
+  }
+
+  .comment__wrapper {
+    order: 2;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__image-quotes {
+    display: block;
+  }
+
+  .comment {
+    width: 690px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 128px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 42px;
+      top: 162px;
+      left: 0;
+      transform: translateY(-50%);
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      cursor: pointer;
     }
 
-    .comment__image-quotes {
-      display: block;
-    }
-
-    .comment {
-      position: relative;
-      padding: 0 128px;
-
-      &::after {
-      content: '';
-        position: absolute;
-        width: 22px;
-        height: 42px;
-        top: 162px;
-        left: 0;
-        transform: translateY(-50%);
-        background-image: url(../img/icon-review-arrow-left.svg);
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        cursor: pointer;
-    }
-
-      &::before {
-      content: '';
-        position: absolute;
-        width: 22px;
-        height: 42px;
-        top: 162px;
-        left: 929px;
-        transform: translate(-50%, -50%);
-        background-image: url(../img/icon-review-arrow-right.svg);
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 42px;
+      top: 162px;
+      left: 929px;
+      transform: translate(-50%, -50%);
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      cursor: pointer;
     }
   }
 

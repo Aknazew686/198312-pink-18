@@ -45,6 +45,7 @@
     display: flex;
     width: 558px;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .fildtext__input {
@@ -63,19 +64,14 @@
   }
 
   .fildtext__input--contacts {
-    margin-left: 61px;
     margin-bottom: 9px;
     margin-left: 56px;
     padding-right: 60px;
   }
 
-  .fildtext--contacts {
-    position: relative;
-  }
-
   .fildtext--contacts::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 61px;
     height: 61px;
     background-color: #e6e6e6;
@@ -85,14 +81,14 @@
 
   .fildtext--phone::after {
     position: absolute;
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .fildtext--mail::after {
     position: absolute;
-    background-image: url(../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.woff2') format('woff2');
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/opensansbold.woff') format('woff'), url('../fonts/opensansbold.woff2') format('woff2');
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.woff2') format('woff2');
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
@@ -781,7 +781,7 @@ img {
   background-color: #fefefe;
 }
 .social__link--twitter::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 18px;
   height: 16px;
@@ -789,12 +789,12 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-image: url('../img/icon-twitter.svg');
+  background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 .social__link--facebook::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 9px;
   height: 18px;
@@ -802,12 +802,12 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-image: url('../img/icon-facebook.svg');
+  background-image: url("../img/icon-facebook.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 .social__link--youtube::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 16px;
@@ -815,7 +815,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-image: url('../img/icon-youtube.svg');
+  background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -953,7 +953,7 @@ img {
     padding: 0 128px;
   }
   .comment::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 22px;
     height: 42px;
@@ -967,7 +967,7 @@ img {
     cursor: pointer;
   }
   .comment::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 22px;
     height: 42px;
@@ -1817,7 +1817,7 @@ input:checked + span::before {
           transform: translate(-50%, -50%);
 }
 .study__clock::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 318px;
   height: 356px;

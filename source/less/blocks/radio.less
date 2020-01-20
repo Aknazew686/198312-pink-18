@@ -1,14 +1,11 @@
 .radio__label {
-  font-family: @font-main;
+  position: relative;
+  padding-left: 70px;
+  display: inline-block;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
   color: #283645;
-}
-
-.radio__input {
-  width: 37px;
-  height: 36px;
 }
 
 .radio {
@@ -27,12 +24,6 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.radio__label {
-  position: relative;
-  padding-left: 70px;
-  display: inline-block;
 }
 
 .radio__label::after {
@@ -63,8 +54,9 @@
 input:checked + span::before {
   display: block;
 }
+
 @media (min-width: @tablet-width) {
-  .radio__input{
+  .radio__input {
     margin-left: 59px;
   }
 

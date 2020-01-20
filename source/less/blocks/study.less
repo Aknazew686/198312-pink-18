@@ -26,14 +26,14 @@
 }
 
 .study__clock::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 318px;
   height: 356px;
   top: 77px;
   left: 102px;
   transform: translate(-50%, -50%);
-  background-image: url(../img/icon-timer.svg);
+  background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -101,6 +101,7 @@
 
 @media (min-width: @desktop-width) {
   .study {
+    padding-bottom: 113px;
     background-color: @color-gray;
   }
 
@@ -128,9 +129,5 @@
 
   .study__link {
     font-size: 18px;
-  }
-
-  .study {
-    padding-bottom: 113px;
   }
 }
