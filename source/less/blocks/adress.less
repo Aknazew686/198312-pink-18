@@ -19,11 +19,16 @@
   transform: translateX(-50%,);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .adress__map {
     height: 373px;
+  }
+
+  .adress::after {
+    height: 103px;
   }
 }
 
@@ -31,5 +36,9 @@
   .adress__map {
     height: 523px;
     margin-bottom: 33px;
+  }
+
+  .adress::after {
+    height: 140px;
   }
 }
