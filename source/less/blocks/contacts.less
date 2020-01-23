@@ -31,7 +31,11 @@
   text-align: center;
   line-height: 1.2;
   margin: 0 auto;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
+}
+
+.contacts__text--mail {
+  margin-bottom: 24px;
 }
 
 @media (min-width: @tablet-width) {
@@ -50,6 +54,18 @@
     margin-top: 28px;
     margin-bottom: 10px;
   }
+
+  .contacts__text--mail {
+    margin-bottom: 17px;
+  }
+
+  .contacts__heading--adress {
+    margin-bottom: 6px;
+  }
+
+  .contacts__heading--mail {
+    margin-bottom: 4px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -67,11 +83,34 @@
   }
 
   .contacts__text--phone {
-    margin-top: 13px;
+    margin: 0 0 0 23px;
   }
 
   .contacts__text--mail {
-    margin-top: 20px;
     margin-left: 30px;
+  }
+
+  .contacts__text {
+    margin-bottom: 0;
+  }
+
+  .contacts__heading {
+    margin: 0;
+  }
+
+  .contacts__heading--phone {
+    margin-left: 83px;
+  }
+
+  .contacts__heading--adress {
+    margin-left: 44px;
+  }
+
+  .contacts__heading--mail {
+    margin-left: 109px;
+  }
+
+  .contacts__text--adress {
+    margin-top: 22px;
   }
 }

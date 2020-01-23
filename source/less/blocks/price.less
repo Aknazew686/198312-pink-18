@@ -10,7 +10,7 @@
 
 .price__wrapper {
   background-image: url("../img/bg-triangle-white.svg");
-  background-position: 50% -22px;
+  background-position: 50% 0;
   background-repeat: no-repeat;
 }
 
@@ -69,8 +69,8 @@
 
 .price__wrapper--gray {
   background-color: @color-gray;
-  padding-top: 87px;
-  padding-bottom: 50px;
+  padding-top: 124px;
+  padding-bottom: 47px;
   overflow: hidden;
 }
 
@@ -121,7 +121,7 @@
   .price__rate {
     font-size: 16px;
     padding-top: 14px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
   }
 
   .price__rate-wrapper {
@@ -129,7 +129,12 @@
   }
 
   .price__wrapper--gray {
+    padding-top: 109px;
     padding-bottom: 66px;
+  }
+
+  .price__wrapper {
+    background-position: 50% 0;
   }
 
   .price__cost {
@@ -185,6 +190,7 @@
 @media (min-width: @desktop-width) {
   .price__list td {
     min-width: 232px;
+    background-color: #ffffff;
   }
 
   .price__rate--hit::after {
@@ -194,8 +200,8 @@
     background: #d32355;
     position: absolute;
     width: 100px;
-    top: 12px;
-    left: -27px;
+    top: 11px;
+    left: -25px;
     padding: 5px 0;
     transform: rotate(-45deg);
   }
@@ -206,7 +212,7 @@
   }
 
   .price__wrapper--gray {
-    padding-top: 137px;
+    padding-top: 160px;
     padding-bottom: 95px;
   }
 
@@ -217,7 +223,7 @@
 
   .price__rate {
     padding-top: 17px;
-    padding-bottom: 17px;
+    padding-bottom: 19px;
   }
 
   .price__cost {
@@ -227,5 +233,9 @@
   .price__title {
     font-size: 18px;
     padding-left: 21px;
+  }
+
+  .price__wrapper {
+    background-size: contain;
   }
 }
