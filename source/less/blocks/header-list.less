@@ -1,12 +1,10 @@
 .header-list {
-  font-family: @font-main;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.78;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -26,7 +24,6 @@
     font-weight: 400;
     line-height: 1;
     text-transform: none;
-
     display: flex;
     width: 621px;
     justify-content: space-between;
@@ -34,5 +31,10 @@
 
   .header-list__item {
     border: none;
+  }
+
+  .header-list__link--active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 8px;
   }
 }

@@ -39,7 +39,7 @@
                 <a class="header-list__link" href="photo.html">Фотографии</a>
               </li>
               <li class="header-list__item">
-                <a class="header-list__link">Конкурс</a>
+                <a class="header-list__link header-list__link--active">Конкурс</a>
               </li>
               <li class="header-list__item">
                 <a class="header-list__link" href="https://htmlacademy.ru/intensive/adaptive ">HTML Academy</a>
@@ -61,9 +61,10 @@
       <h2 class="visually-hidden">Форма для конкурса</h2>
       <div class="container">
         <p class="form__text">
-          Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу
+          Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на<br
+            class="form__text--carryover">вашу
           бонусную
-          карту!<span class="form__text form__text--disabled">Пожалуйста,заполните форму ниже:</span>
+          карту! <span class="form__text form__text--disabled">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -101,7 +102,8 @@
             <div class="form__wrapper form__wrapper--gray">
               <div class="container container--desktop">
                 <fieldset class="form__fieldset form__fieldset--checkbox">
-                  <legend class="filter__legend filter__legend--checkbox">Ваши безбашенные достижения в&nbsp;путешествии
+                  <legend class="filter__legend filter__legend--checkbox">Ваши безбашенные<br
+                      class="filter__legend--carryover">достижения в&nbsp;путешествии
                   </legend>
                   <ul class="filter__list filter__list--checkbox">
                     <li class="filter__item">
@@ -116,7 +118,7 @@
                         <span class="checkbox__label">Обгорел на пляже</span>
                       </label>
                     </li>
-                    <li class="filter__item">
+                    <li class="filter__item filter__item--norris">
                       <label class="checkbox">
                         <input class="checkbox__input" type="checkbox" name="сhak-norris">
                         <span class="checkbox__label">Видел Чака Норриса</span>
@@ -266,22 +268,22 @@
       </div>
     </div>
   </footer>
-  <section class="popup-error">
+  <section class="popup popup--error">
     <h2 class="visually-hidden">Попап с ошибкой</h2>
-    <p class="popup-error__heading">Что-то пошло не так!</p>
-    <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <div class="popup-error__wrapper">
-      <button class="popup-error__button">ок</button>
+    <p class="popup__heading">Что-то пошло не так!</p>
+    <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <div class="popup__wrapper">
+      <button class="popup__button">ок</button>
     </div>
   </section>
-  <section class="popup-sent">
+  <section class="popup popup--send">
     <h2 class="visually-hidden">Попап с подтверждением отправки</h2>
-    <p class="popup-sent__heading">Ваша заявка отправлена</p>
-    <p class="popup-sent__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
+    <p class="popup__heading">Ваша заявка отправлена</p>
+    <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
       рассмотрим ее и
       оповестим вас.</p>
-    <div class="popup-sent__wrapper">
-      <button class="popup-sent__button">закрыть окно</button>
+    <div class="popup__wrapper">
+      <button class="popup__button">закрыть окно</button>
     </div>
   </section>
 </body>

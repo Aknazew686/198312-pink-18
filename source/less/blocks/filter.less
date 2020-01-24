@@ -11,7 +11,6 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
-
   margin: 0;
   padding: 0;
   padding-top: 37px;
@@ -54,7 +53,7 @@
   border: solid 2px #2aab6d;
   border-radius: 5px;
   margin: 0;
-  padding: 17px 45px;
+  padding: 16px 46px;
 }
 
 .filter__info--snowflake {
@@ -65,6 +64,10 @@
   .filter__legend--heading {
     display: block;
     margin-bottom: 32px;
+  }
+
+  .filter__legend--carryover {
+    display: none;
   }
 
   .filter__legend {
@@ -97,15 +100,16 @@
 @media (min-width: @desktop-width) {
   .filter__list--contacts {
     display: flex;
-    width: 940px;
+    width: 877px;
     justify-content: space-between;
   }
 
   .filter__list--checkbox {
     display: flex;
-    width: 940px;
+    width: 870px;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 58px;
   }
 
   .filter__info--disabled {
@@ -122,6 +126,11 @@
 
   .filter__item--souvenirs {
     order: 3;
+    width: 242px;
+  }
+
+  .filter__item--norris {
+    width: 242px;
   }
 
   .filter__item--hotel {
@@ -131,5 +140,17 @@
   .filter__button {
     padding-top: 15px;
     padding-bottom: 14px;
+  }
+
+  .filter__legend--checkbox {
+    margin-left: 251px;
+    text-align: left;
+  }
+
+  .filter__legend--emotions {
+    text-align: left;
+    margin-left: 338px;
+    margin-bottom: 34px;
+    padding: 0 38px;
   }
 }
