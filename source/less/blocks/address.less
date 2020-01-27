@@ -1,14 +1,14 @@
-.adress__map {
+.address__map {
   width: 100%;
   height: 200px;
   border: none;
 }
 
-.adress {
+.address {
   position: relative;
 }
 
-.adress::after {
+.address::after {
   content: "";
   position: absolute;
   background-image: url("../img/bg-triangle-white-footer.svg");
@@ -22,22 +22,22 @@
 }
 
 @media (min-width: @tablet-width) {
-  .adress__map {
+  .address__map {
     height: 373px;
   }
 
-  .adress::after {
+  .address::after {
     height: 103px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .adress__map {
+  .address__map {
     height: 523px;
     margin-bottom: 33px;
   }
 
-  .adress::after {
+  .address::after {
     height: 165px;
     background-position: center top;
     background-size: contain;
